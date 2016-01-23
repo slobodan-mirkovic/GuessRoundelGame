@@ -21,8 +21,8 @@ function getRandomNumbers(n,max) {
 
   var list = getRandomNumbers(6,10);
   
-  var roundel = getRandomNumber(6);
-  
+  var roundel = list[getRandomNumber(6)];
+ 
   list.forEach(function(element){
 	var galery = document.getElementById("flexcontainer");
 
