@@ -1,4 +1,5 @@
 
+'use strict'
 
 var roundels = [
 	{ id: 1, airforce: "Serbian Air Force", roundel: "Roundel_of_the_Serbian_Air_Force_2006.svg"},
