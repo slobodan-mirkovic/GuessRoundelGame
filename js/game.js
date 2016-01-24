@@ -21,15 +21,24 @@ function getRandomNumbers(n,max) {
 	return list;
 } 
 
-  var list = getRandomNumbers(6,10);
+
+
+var setGame = function(){
+   var list = getRandomNumbers(6,10);    
   
-  var roundel = list[getRandomNumber(6)];
+   var roundel = list[getRandomNumber(6)];
+
+   var galery = document.getElementById("flexcontainer");
+    
+    while (galery.firstChild) {
+    galery.removeChild(galery.firstChild);
+    }
  
-  list.forEach(function(element){
-	var galery = document.getElementById("flexcontainer");
+  list.forEach(function(element){     
 
     var listItem = document.createElement('div');
 	listItem.className = "item";
+    listItem.id = roundels[element].id;
     var img = document.createElement('img');
     img.src = "img/" + roundels[element].roundel ;
     listItem.appendChild(img);
@@ -41,8 +50,21 @@ function getRandomNumbers(n,max) {
   
   var roundelsImg = document.querySelectorAll("#flexcontainer .item");
   for(var i = 0; i < roundelsImg.length ; i++){
-	   roundelsImg[i].addEventListener('click', function () {alert('sasa');});
+	   roundelsImg[i].addEventListener('click', function(){
+       if(this.id - 1 == roundel){
+           setGame();
+       }
+       else {
+           setTimeout(setGame,2000);
+       }
+           
+       });
   };
+    
+}
+
+setGame();
+ 
 
 	
 	
