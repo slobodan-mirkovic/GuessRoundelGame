@@ -21,9 +21,10 @@ function getRandomNumbers(n,max) {
 	return list;
 } 
 
-
+var points = 0;
 
 var setGame = function(){
+    
    var list = getRandomNumbers(6,10);    
   
    var roundel = list[getRandomNumber(6)];
@@ -53,16 +54,28 @@ var setGame = function(){
 	   roundelsImg[i].addEventListener('click', function(){
        if(this.id - 1 == roundel){
            setGame();
+           points++;
        }
        else {
-           setTimeout(setGame,2000);
+            while (galery.firstChild) {
+             galery.removeChild(galery.firstChild);
+           }
+           var cover = document.createElement('div');           
+           cover.className = "cover";
+           var corectImg = document.createElement('img');
+           corectImg.src = "img/" + roundels[roundel].roundel ;
+          cover.appendChild(corectImg);
+          galery.appendChild(cover);
+           setTimeout(function(){
+               setGame();
+           },2000);
        }
            
        });
   };
     
 }
-
+setTimeout(function() {alert('End game, points: ' + points)},20000);
 setGame();
  
 
