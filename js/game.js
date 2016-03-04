@@ -75,7 +75,7 @@ var setGame = function(){
   };
     
 }
-setTimeout(function() {alert('End game, points: ' + points)},20000);
+// setTimeout(function() {alert('End game, points: ' + points)},20000);
 setGame();
  
 
