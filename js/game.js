@@ -25,7 +25,7 @@ var points = 0;
 
 var setGame = function(){
     
-   var list = getRandomNumbers(6,13);    
+   var list = getRandomNumbers(6,22);    
   
    var roundel = list[getRandomNumber(6)];
 

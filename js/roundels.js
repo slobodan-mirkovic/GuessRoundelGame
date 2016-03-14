@@ -15,4 +15,13 @@ var roundels = [
 	{ id: 11, airforce: "German Air Force", roundel: "Roundel_of_the_German_Air_Force_(with_Border).svg"},
 	{ id: 12, airforce: "Croatian Air Force", roundel: "Roundel_of_the_Croatian_Air_Force.svg"},
 	{ id: 13, airforce: "Hellenic Air Force", roundel: "Hellenic_Air_Force_Roundel.svg"},
+	{ id: 14, airforce: "Macedonian Air Force", roundel: "Roundel_of_the_Macedonian_Air_Force.svg"},
+	{ id: 15, airforce: "Slovenian Air Force", roundel: "Roundel_of_Slovenia.svg"},
+	{ id: 16, airforce: "Portuguese Air Force", roundel: "Portuguese_Air_Force_roundel.svg"},
+	{ id: 17, airforce: "Air Wing of the Armed Forces of Malta", roundel: "Roundel_of_Malta.svg"},
+	{ id: 18, airforce: "Swiss Air Force", roundel: "Swiss_roundel.svg"},
+	{ id: 19, airforce: "Polish Air Force", roundel: "Roundel_of_Poland.svg"},
+	{ id: 20, airforce: "Austrian Air Force", roundel: "Roundel_of_the_Austrian_Air_Force.svg"},
+	{ id: 21, airforce: "Czech Air Force", roundel: "Czech_roundel.svg"},
+	{ id: 22, airforce: "Slovak Air Force", roundel: "Coat_of_arms_of_Slovakia.svg"},
 ];
