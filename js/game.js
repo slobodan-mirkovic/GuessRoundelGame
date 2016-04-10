@@ -7,6 +7,11 @@ function getRandomNumber(max) {
 
 
 function getRandomNumbers(n,max) {
+    
+    if(max < n)
+    {
+        n = max;
+    }
 	
 	var list = new Array();
 	
